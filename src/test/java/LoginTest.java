@@ -10,6 +10,6 @@ public class LoginTest {
 
     @Test
     public void logout() {
-        new LoginPage().logot();
+        new LoginPage().logout();
     }
 }

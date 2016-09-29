@@ -14,8 +14,7 @@ public class LoginPage {
     private final By logOut = By.xpath(".//*[@data-ng-click='logout()']");
 
     public void login() {
-        /*System.setProperty("webdriver.chrome.driver", "drivers/geckodriver.exe");
-        System.setProperty("selenide.browser", "firefox");*/
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
         open("http://192.168.240.71/home");
         $(logIn).click();
         $(uName).setValue("iharas");
@@ -23,7 +22,7 @@ public class LoginPage {
         $(signIn).click();
     }
 
-    public void logot() {
+    public void logout() {
         login();
         $(userName).click();
         $(logOut).click();
